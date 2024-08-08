@@ -1,0 +1,19 @@
+1. Directive is an intructions to the DOM
+  this can be used:
+  a. Manipulate DOM
+  b. Change Behaviour
+  c. Add/Remove DOM Elements
+  (Jadi intinya directive itu urusannya sama DOM) -> memanipulasi, menambahkan, mengurangi
+2. Directive di Angular ada 3: component directive, attribute directive and structural directive
+   a. component itu ya angular component, directive with template (also a directive) instruct angular anything (perbedaan utama pada component directive adalah punya template)
+   b. attribute directive adalah kita bisa mengubah penampilan/apperance dari DOM element.
+      kita bisa aja misalnya menambahkan attribute directive untuk changeToGreen, tapi tidak bisa untuk delete the tag (gabisa nambah atau ngurangi DOM).
+      Kita pake nya pun kaya attribute html jadi gamungkin ga ada element nya (bisa dijalankan dengan branching)
+      contoh: ngStyle, ngClass
+   c. structural directive can change DOM layout dengan nambah atau ngurangi DOM Elements. manipulasi yang dilakukan adalah menambahkan atau mengurangi dom yang ada.
+      contoh: ngIf, ngFor, ngSwitch
+      Note penting: SETIAP MENGGUNAKAN STRUCTURAL DIRECTIVE, KITA PAKE * SEBELUMNYA (*ngIf, *ngFor etc)
+
+Selain menggunakan component directive, biasanya digunakan pakai selector html attribute (selectpor = '[name]')
+
+Just like component, directive is a class also dengan decorator @Directive

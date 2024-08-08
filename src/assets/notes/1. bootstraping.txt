@@ -1,0 +1,1 @@
+bootstraping means the entry point of the program, where angular reads and bootstraping whole components

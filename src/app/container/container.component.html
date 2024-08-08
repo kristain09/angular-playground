@@ -1,0 +1,23 @@
+<div class="ekart--product--container">
+  <!--  <img [src]="product.pImage" [alt]="product.price">-->
+  <!--  <p>name: {{ product.name }}</p>-->
+  <!--  <p>Price: ${{ product.price }}</p>-->
+  <!--  <p>Color: {{ product.color }}</p>-->
+  <!--  <p>Discounted Price: ${{ disCountedPrice.toFixed(0) }}</p>-->
+  <!--  <p>{{ product.inStock > 0 ? 'Only ' + product.inStock + ' Items Left' : 'Not in Stock' }}</p>-->
+  <!--  <button (click)="decrementCartValue()">-</button>-->
+  <!--  <span>{{ addToCart }}</span>-->
+  <!--  <button (click)="incrementCartValue()">+</button>-->
+  <!--  &lt;!&ndash;  <input (input)="onNameChange($event)">&ndash;&gt;-->
+  <!--  &lt;!&ndash;  <p>{{ name }}</p>&ndash;&gt;-->
+  <app-search></app-search>
+  <product-list></product-list>
+  <div *ngFor="let item of listOfString">
+    <p>{{item}}</p>
+  </div>
+</div>
+
+
+<!--HTML attribute like:
+    Disabled, Hidden, Checked the string interpolation syntax does not work-->
+
